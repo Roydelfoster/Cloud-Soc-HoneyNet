@@ -32,23 +32,24 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1dsWQIA.png)<br>  
+![Linux Syslog Auth Failures](https://i.imgur.com/h3cjV0E.png)<br>
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/NFoziYF.png)<br>
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/wZezppF.png)<br>
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 19/06/2023, 02:14:18 AM
+Stop Time  2/06/2023, 02:14:18 AM
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 69850
+| Syslog                   | 2291
+| SecurityAlert            | 5
+| SecurityIncident         | 282
+| AzureNetworkAnalytics_CL | 1281
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -57,12 +58,12 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 22/06/2023, 02:45:18 AM
+Stop Time	 23/06/2023, 02:45:18 Am
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
+| SecurityEvent            | 5911
 | Syslog                   | 25
 | SecurityAlert            | 0
 | SecurityIncident         | 0
